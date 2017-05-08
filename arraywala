@@ -1,0 +1,41 @@
+package monday123;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class arraywala {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> a = new ArrayList<Integer>();
+		
+		a.add(12);
+		a.add(34);
+		a.add(44);
+		
+		
+		//for new line
+		for (int i = 0; i < a.size(); i++) {
+			System.out.println(a.get(i));
+		}
+		
+		System.out.println(a);
+		
+		//iterator with object
+		Iterator<Integer> it=a.iterator();
+		
+		while (it.hasNext()) {
+			System.out.println(it.next());
+			
+		}
+		
+		
+
+	}
+
+	@Override
+	public String toString() {
+		return "arraywala [getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
+}
